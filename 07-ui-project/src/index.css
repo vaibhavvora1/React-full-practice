@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+* {
+  user-select: none;
+ 
+}
+
+.right-content-scroll {
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 7%,
+    black 93%,
+    transparent
+  );
+}
+
+.right-content-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.right-content-card {
+  --card-progress: 0.35;
+  scroll-snap-align: center;
+  transform-origin: center;
+  opacity: calc(0.45 + var(--card-progress) * 0.55);
+  filter: saturate(calc(0.65 + var(--card-progress) * 0.35));
+  transform: translateY(calc((1 - var(--card-progress)) * 34px))
+    scale(calc(0.88 + var(--card-progress) * 0.12));
+  transition: transform 220ms ease-out, opacity 220ms ease-out,
+    filter 220ms ease-out;
+}
+

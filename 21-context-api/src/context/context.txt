@@ -1,0 +1,11 @@
+create kro context 
+provide kro data
+use karo datA
+
+app.jsx ko context file se wrapp krna padega 
+
+
+context me context ki file banavani
+and after create context kravanu 
+p6i provider add kravanu 
+and jya use krvu hoy tya usecontext use kravanu

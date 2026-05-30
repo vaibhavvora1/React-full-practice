@@ -1,0 +1,15 @@
+
+import React from 'react'
+import Homebtn from '../components/Homebtn'
+
+const Home = () => {
+  return (
+    <div>
+      <Homebtn/> 
+        <h1>Home Page</h1>
+        <p>Welcome to the Home Page!</p>
+    </div>
+  )
+}
+
+export default Home
